@@ -8,15 +8,15 @@ func main() {
 
 	for num := 1; num < 20; num++ {
 		i := 0
-		for bil := 1; bil < 20; bil++ {
-			if num%bil == 0 {
+		for z := 1; z < 20; z++ {
+			if num%z == 0 {
 				i++
 			}
 		}
-		if i == 2 && num != 1 {
+		if i == 2 && num > 1 {
 			s = append(s, num)
-			fmt.Printf("s = %v\n", s)
 		}
 	}
+	fmt.Printf("s = %v\n", s)
 
 }
